@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03CC2FAC70225E3DC12CA61B /* Pods_SHttpToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDED0C407D282ED14A0877 /* Pods_SHttpToolTests.framework */; };
 		1819276922BA36B9000DB8D2 /* SHttpTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1819275F22BA36B8000DB8D2 /* SHttpTool.framework */; };
 		1819276E22BA36B9000DB8D2 /* SHttpToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819276D22BA36B9000DB8D2 /* SHttpToolTests.m */; };
 		1819277E22BA3830000DB8D2 /* SHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819277A22BA3830000DB8D2 /* SHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1819277F22BA3830000DB8D2 /* SAFNHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1819278022BA3830000DB8D2 /* SAFNHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */; };
-		48F6C55DB2DC7405DE3EF98D /* Pods_SHttpTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16943351EFFABC445A8D7A98 /* Pods_SHttpTool.framework */; };
+		5593A14ED1DC3205934B7464 /* Pods_SHttpTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55938FE29C19CF34A0C26CCF /* Pods_SHttpTool.framework */; };
+		796D45AD08A14D40DE5207CF /* Pods_SHttpToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADB89BA1593FC89613413CA /* Pods_SHttpToolTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03CDED0C407D282ED14A0877 /* Pods_SHttpToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09F0DE8CA412E50FE2625F2C /* Pods-SHttpTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool.release.xcconfig"; path = "Target Support Files/Pods-SHttpTool/Pods-SHttpTool.release.xcconfig"; sourceTree = "<group>"; };
-		16943351EFFABC445A8D7A98 /* Pods_SHttpTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		161183CFEF01D378667658E5 /* Pods-SHttpTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool.debug.xcconfig"; path = "Target Support Files/Pods-SHttpTool/Pods-SHttpTool.debug.xcconfig"; sourceTree = "<group>"; };
 		1819275F22BA36B8000DB8D2 /* SHttpTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHttpTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1819276322BA36B8000DB8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1819276822BA36B9000DB8D2 /* SHttpToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHttpToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,9 +36,11 @@
 		1819277A22BA3830000DB8D2 /* SHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHttpTool.h; sourceTree = "<group>"; };
 		1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFNHttpTool.h; sourceTree = "<group>"; };
 		1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFNHttpTool.m; sourceTree = "<group>"; };
-		2F22C0118DA29E932406A505 /* Pods-SHttpToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpToolTests.debug.xcconfig"; path = "Target Support Files/Pods-SHttpToolTests/Pods-SHttpToolTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A0D975DF2E08BC970CB5A055 /* Pods-SHttpTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool.debug.xcconfig"; path = "Target Support Files/Pods-SHttpTool/Pods-SHttpTool.debug.xcconfig"; sourceTree = "<group>"; };
-		F0731143E04D265239A06B85 /* Pods-SHttpToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpToolTests.release.xcconfig"; path = "Target Support Files/Pods-SHttpToolTests/Pods-SHttpToolTests.release.xcconfig"; sourceTree = "<group>"; };
+		55938FE29C19CF34A0C26CCF /* Pods_SHttpTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADB89BA1593FC89613413CA /* Pods_SHttpToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AFBA98D8F3A9EB181EAFA6B /* Pods-SHttpToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpToolTests.debug.xcconfig"; path = "Target Support Files/Pods-SHttpToolTests/Pods-SHttpToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		743150BDB3CD542745587B49 /* Pods-SHttpTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool.release.xcconfig"; path = "Target Support Files/Pods-SHttpTool/Pods-SHttpTool.release.xcconfig"; sourceTree = "<group>"; };
+		F951D174964BD5442FEC4E44 /* Pods-SHttpToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpToolTests.release.xcconfig"; path = "Target Support Files/Pods-SHttpToolTests/Pods-SHttpToolTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48F6C55DB2DC7405DE3EF98D /* Pods_SHttpTool.framework in Frameworks */,
+				5593A14ED1DC3205934B7464 /* Pods_SHttpTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,32 +57,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1819276922BA36B9000DB8D2 /* SHttpTool.framework in Frameworks */,
-				03CC2FAC70225E3DC12CA61B /* Pods_SHttpToolTests.framework in Frameworks */,
+				796D45AD08A14D40DE5207CF /* Pods_SHttpToolTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04AC923181D2E7BA0218FF61 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A0D975DF2E08BC970CB5A055 /* Pods-SHttpTool.debug.xcconfig */,
-				09F0DE8CA412E50FE2625F2C /* Pods-SHttpTool.release.xcconfig */,
-				2F22C0118DA29E932406A505 /* Pods-SHttpToolTests.debug.xcconfig */,
-				F0731143E04D265239A06B85 /* Pods-SHttpToolTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		1819275522BA36B8000DB8D2 = {
 			isa = PBXGroup;
 			children = (
 				1819276122BA36B8000DB8D2 /* SHttpTool */,
 				1819276C22BA36B9000DB8D2 /* SHttpToolTests */,
 				1819276022BA36B8000DB8D2 /* Products */,
-				04AC923181D2E7BA0218FF61 /* Pods */,
-				1C090F80413CC41E4E940509 /* Frameworks */,
+				CC8FA692D92FFEAF87E9E543 /* Pods */,
+				C68274EBFCA2AF3DD7F5149F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,13 +120,25 @@
 			path = AFN;
 			sourceTree = "<group>";
 		};
-		1C090F80413CC41E4E940509 /* Frameworks */ = {
+		C68274EBFCA2AF3DD7F5149F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16943351EFFABC445A8D7A98 /* Pods_SHttpTool.framework */,
-				03CDED0C407D282ED14A0877 /* Pods_SHttpToolTests.framework */,
+				55938FE29C19CF34A0C26CCF /* Pods_SHttpTool.framework */,
+				6ADB89BA1593FC89613413CA /* Pods_SHttpToolTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC8FA692D92FFEAF87E9E543 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				161183CFEF01D378667658E5 /* Pods-SHttpTool.debug.xcconfig */,
+				743150BDB3CD542745587B49 /* Pods-SHttpTool.release.xcconfig */,
+				6AFBA98D8F3A9EB181EAFA6B /* Pods-SHttpToolTests.debug.xcconfig */,
+				F951D174964BD5442FEC4E44 /* Pods-SHttpToolTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,7 +441,7 @@
 		};
 		1819277422BA36B9000DB8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0D975DF2E08BC970CB5A055 /* Pods-SHttpTool.debug.xcconfig */;
+			baseConfigurationReference = 161183CFEF01D378667658E5 /* Pods-SHttpTool.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +452,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SHttpTool/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +468,7 @@
 		};
 		1819277522BA36B9000DB8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09F0DE8CA412E50FE2625F2C /* Pods-SHttpTool.release.xcconfig */;
+			baseConfigurationReference = 743150BDB3CD542745587B49 /* Pods-SHttpTool.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -477,6 +479,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SHttpTool/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +495,7 @@
 		};
 		1819277722BA36B9000DB8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F22C0118DA29E932406A505 /* Pods-SHttpToolTests.debug.xcconfig */;
+			baseConfigurationReference = 6AFBA98D8F3A9EB181EAFA6B /* Pods-SHttpToolTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5442CQNN;
@@ -510,7 +513,7 @@
 		};
 		1819277822BA36B9000DB8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0731143E04D265239A06B85 /* Pods-SHttpToolTests.release.xcconfig */;
+			baseConfigurationReference = F951D174964BD5442FEC4E44 /* Pods-SHttpToolTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5442CQNN;

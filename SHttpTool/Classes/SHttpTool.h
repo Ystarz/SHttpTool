@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AFN/SAFNHttpTool.h"
+
+#import "SAFNHttpTool.h"
 //! Project version number for SHttpTool.
 FOUNDATION_EXPORT double SHttpToolVersionNumber;
 
