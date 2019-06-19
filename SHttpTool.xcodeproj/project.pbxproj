@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03CC2FAC70225E3DC12CA61B /* Pods_SHttpToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CDED0C407D282ED14A0877 /* Pods_SHttpToolTests.framework */; };
 		1819276922BA36B9000DB8D2 /* SHttpTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1819275F22BA36B8000DB8D2 /* SHttpTool.framework */; };
 		1819276E22BA36B9000DB8D2 /* SHttpToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819276D22BA36B9000DB8D2 /* SHttpToolTests.m */; };
-		1819277022BA36B9000DB8D2 /* SHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819276222BA36B8000DB8D2 /* SHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1819277E22BA3830000DB8D2 /* SHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819277A22BA3830000DB8D2 /* SHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1819277F22BA3830000DB8D2 /* SAFNHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1819278022BA3830000DB8D2 /* SAFNHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */; };
+		48F6C55DB2DC7405DE3EF98D /* Pods_SHttpTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16943351EFFABC445A8D7A98 /* Pods_SHttpTool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03CDED0C407D282ED14A0877 /* Pods_SHttpToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F0DE8CA412E50FE2625F2C /* Pods-SHttpTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool.release.xcconfig"; path = "Target Support Files/Pods-SHttpTool/Pods-SHttpTool.release.xcconfig"; sourceTree = "<group>"; };
+		16943351EFFABC445A8D7A98 /* Pods_SHttpTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1819275F22BA36B8000DB8D2 /* SHttpTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHttpTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1819276222BA36B8000DB8D2 /* SHttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHttpTool.h; sourceTree = "<group>"; };
 		1819276322BA36B8000DB8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1819276822BA36B9000DB8D2 /* SHttpToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHttpToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1819276D22BA36B9000DB8D2 /* SHttpToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHttpToolTests.m; sourceTree = "<group>"; };
 		1819276F22BA36B9000DB8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1819277A22BA3830000DB8D2 /* SHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHttpTool.h; sourceTree = "<group>"; };
+		1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFNHttpTool.h; sourceTree = "<group>"; };
+		1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFNHttpTool.m; sourceTree = "<group>"; };
+		2F22C0118DA29E932406A505 /* Pods-SHttpToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpToolTests.debug.xcconfig"; path = "Target Support Files/Pods-SHttpToolTests/Pods-SHttpToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0D975DF2E08BC970CB5A055 /* Pods-SHttpTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool.debug.xcconfig"; path = "Target Support Files/Pods-SHttpTool/Pods-SHttpTool.debug.xcconfig"; sourceTree = "<group>"; };
+		F0731143E04D265239A06B85 /* Pods-SHttpToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpToolTests.release.xcconfig"; path = "Target Support Files/Pods-SHttpToolTests/Pods-SHttpToolTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F6C55DB2DC7405DE3EF98D /* Pods_SHttpTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +57,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				1819276922BA36B9000DB8D2 /* SHttpTool.framework in Frameworks */,
+				03CC2FAC70225E3DC12CA61B /* Pods_SHttpToolTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04AC923181D2E7BA0218FF61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0D975DF2E08BC970CB5A055 /* Pods-SHttpTool.debug.xcconfig */,
+				09F0DE8CA412E50FE2625F2C /* Pods-SHttpTool.release.xcconfig */,
+				2F22C0118DA29E932406A505 /* Pods-SHttpToolTests.debug.xcconfig */,
+				F0731143E04D265239A06B85 /* Pods-SHttpToolTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1819275522BA36B8000DB8D2 = {
 			isa = PBXGroup;
 			children = (
 				1819276122BA36B8000DB8D2 /* SHttpTool */,
 				1819276C22BA36B9000DB8D2 /* SHttpToolTests */,
 				1819276022BA36B8000DB8D2 /* Products */,
+				04AC923181D2E7BA0218FF61 /* Pods */,
+				1C090F80413CC41E4E940509 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +98,7 @@
 		1819276122BA36B8000DB8D2 /* SHttpTool */ = {
 			isa = PBXGroup;
 			children = (
-				1819276222BA36B8000DB8D2 /* SHttpTool.h */,
+				1819277922BA3830000DB8D2 /* Classes */,
 				1819276322BA36B8000DB8D2 /* Info.plist */,
 			);
 			path = SHttpTool;
@@ -86,6 +113,33 @@
 			path = SHttpToolTests;
 			sourceTree = "<group>";
 		};
+		1819277922BA3830000DB8D2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1819277A22BA3830000DB8D2 /* SHttpTool.h */,
+				1819277B22BA3830000DB8D2 /* AFN */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1819277B22BA3830000DB8D2 /* AFN */ = {
+			isa = PBXGroup;
+			children = (
+				1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */,
+				1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */,
+			);
+			path = AFN;
+			sourceTree = "<group>";
+		};
+		1C090F80413CC41E4E940509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16943351EFFABC445A8D7A98 /* Pods_SHttpTool.framework */,
+				03CDED0C407D282ED14A0877 /* Pods_SHttpToolTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +147,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1819277022BA36B9000DB8D2 /* SHttpTool.h in Headers */,
+				1819277F22BA3830000DB8D2 /* SAFNHttpTool.h in Headers */,
+				1819277E22BA3830000DB8D2 /* SHttpTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +159,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1819277322BA36B9000DB8D2 /* Build configuration list for PBXNativeTarget "SHttpTool" */;
 			buildPhases = (
+				60212B7A2B5F49865CA91B63 /* [CP] Check Pods Manifest.lock */,
 				1819275A22BA36B8000DB8D2 /* Headers */,
 				1819275B22BA36B8000DB8D2 /* Sources */,
 				1819275C22BA36B8000DB8D2 /* Frameworks */,
@@ -122,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1819277622BA36B9000DB8D2 /* Build configuration list for PBXNativeTarget "SHttpToolTests" */;
 			buildPhases = (
+				B62E183182F79AD0DC337917 /* [CP] Check Pods Manifest.lock */,
 				1819276422BA36B9000DB8D2 /* Sources */,
 				1819276522BA36B9000DB8D2 /* Frameworks */,
 				1819276622BA36B9000DB8D2 /* Resources */,
@@ -188,11 +245,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60212B7A2B5F49865CA91B63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHttpTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62E183182F79AD0DC337917 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHttpToolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1819275B22BA36B8000DB8D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1819278022BA3830000DB8D2 /* SAFNHttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +440,7 @@
 		};
 		1819277422BA36B9000DB8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D975DF2E08BC970CB5A055 /* Pods-SHttpTool.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -350,6 +456,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sss.SHttpTool;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -359,6 +466,7 @@
 		};
 		1819277522BA36B9000DB8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09F0DE8CA412E50FE2625F2C /* Pods-SHttpTool.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +482,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sss.SHttpTool;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -383,6 +492,7 @@
 		};
 		1819277722BA36B9000DB8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F22C0118DA29E932406A505 /* Pods-SHttpToolTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5442CQNN;
@@ -400,6 +510,7 @@
 		};
 		1819277822BA36B9000DB8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0731143E04D265239A06B85 /* Pods-SHttpToolTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5442CQNN;
