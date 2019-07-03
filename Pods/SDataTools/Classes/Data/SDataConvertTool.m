@@ -9,44 +9,27 @@
 #import "SDataConvertTool.h"
 #import <Foundation/Foundation.h>
 #import "NSString+SExtension.h"
-////enum
-//typedef enum : NSUInteger {
-//    AVCapturePresetQualityHigh = 0,
-//    AVCapturePresetQualityNormal,
-//    AVCapturePresetQualityLow,
-//} AVCaptureSessionPresetQuality;
-//
-////declare an array contains all cases
-//const NSArray *__captureQualityA;
-//
-////macro for array creation
-//#ifndef AVCaptureQuality
-//#define AVCaptureQuality \
-//(__captureQualityA == nil ? __captureQualityA = \
-//@[AVCaptureSessionPreset1920x1080,\
-//AVCaptureSessionPreset1280x720,\
-//AVCaptureSessionPreset640x480]\
-//: __captureQualityA)
-//#endif
-//
-////enum and string transform
-////enum -> string
-//#ifndef kGetCapturePresetString
-//#define kGetCapturePresetString(idx) \
-//([AVCaptureQuality objectAtIndex:idx])
-//#endif
-////string -> enum
-//#ifndef kGetCapturePresetEnum
-//#define kGetCapturePresetEnum(string) \
-//([AVCaptureQuality indexOfObject:string])
-//#endif
+
+
 
 @implementation SDataConvertTool
 
-+(NSString*)DataToJsonString:(NSDictionary*)object{
++(NSString*)DataToJsonString:(NSDictionary*)object {
+#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
+    // iOS Simulator
+    // iOS device
     if (@available(iOS 11.0, *)) {
         return [SDataConvertTool DataToJsonString:object option:NSJSONWritingSortedKeys];
-    } else {
+    }
+#elif TARGET_OS_MAC
+    // Other kinds of Mac OS
+    if(@available(macOS 10.13, *)){
+        return [SDataConvertTool DataToJsonString:object option:NSJSONWritingSortedKeys];
+    }
+#else
+#   error "Unknown Apple platform"
+#endif
+    {
         NSString*str=[SDataConvertTool DataToJsonString:object option:NSJSONWritingPrettyPrinted];
         str=[NSString removeNewline:str];
         return str;

@@ -5,7 +5,7 @@ inhibit_all_warnings!
 def commonPods #通用pods集
     # pod 'AFNetworking','~> 3.2.1'
     # pod 'Masonry'
-    pod 'SDataToolsLib'
+    pod 'SDataTools'
     pod 'AFNetworking'
 end
 

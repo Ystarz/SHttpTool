@@ -1,0 +1,6 @@
+framework module SDataTools {
+  umbrella header "SDataTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

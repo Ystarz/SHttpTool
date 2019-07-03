@@ -12,6 +12,19 @@
 
 @implementation SFileTool
 
++(long long) getFileSizeAtPath:(NSString *)path
+{
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    float filesize = -1.0;
+    if ([fileManager fileExistsAtPath:path]) {
+        NSDictionary *fileDic = [fileManager attributesOfItemAtPath:path error:nil];//获取文件的属性
+        long long size = [[fileDic objectForKey:NSFileSize] longLongValue];
+        filesize =size;// 1.0*size/1024;
+    }
+    return filesize;
+}
+
+
 +(NSArray*)getTextArrFromFile:(NSString*)filePath{
     NSArray *fileData;
     NSError *error;

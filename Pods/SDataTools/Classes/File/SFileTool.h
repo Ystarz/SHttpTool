@@ -12,6 +12,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SFileTool : NSObject
+/**
+ 获取文件大小
+
+ @param path <#path description#>
+ @return <#return value description#>
+ */
++(long long) getFileSizeAtPath:(NSString *)path;
 +(NSArray*)getTextArrFromFile:(NSString*)filePath;
 +(void) writeToFile:(NSString *)path contentArr:(NSArray *)arr;
 +(bool)createDir:(NSString*)path;

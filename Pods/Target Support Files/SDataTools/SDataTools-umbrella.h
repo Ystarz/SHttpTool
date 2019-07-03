@@ -11,6 +11,7 @@
 #endif
 
 #import "NSString+SExtension.h"
+#import "NSTimer+ChatAdd.h"
 #import "SDataConvertTool.h"
 #import "SNSStringTool.h"
 #import "STimeTool.h"
@@ -21,8 +22,10 @@
 #import "LinkedListStack.h"
 #import "LoopQueue.h"
 #import "SFileTool.h"
-#import "STools.h"
+#import "SDataTools.h"
+#import "SQueue.h"
+#import "NSObject+ChatAdd.h"
 
-FOUNDATION_EXPORT double SDataToolsLibVersionNumber;
-FOUNDATION_EXPORT const unsigned char SDataToolsLibVersionString[];
+FOUNDATION_EXPORT double SDataToolsVersionNumber;
+FOUNDATION_EXPORT const unsigned char SDataToolsVersionString[];
 
