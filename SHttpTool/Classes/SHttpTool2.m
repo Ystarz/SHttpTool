@@ -38,6 +38,7 @@
     bool isCanAdd=  [[SHttpTool2 sharedInstance]addToActivePoolWithUrl:url];
     if (!isCanAdd) {
         [[SHttpTool2 sharedInstance]rejectRequest:fail];
+        return;
     }
     [SHttpTool2 doPostWithUrl:url param:param success:success fail:fail];
 }
