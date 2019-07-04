@@ -17,8 +17,15 @@
               fail:(void (^)(NSError *error))fail
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    //设置https需要的ssl证书
-    [manager setSecurityPolicy:[self customSecurityPolicy]];
+    if ([url containsString:@"https"]) {
+        //设置https需要的ssl证书
+        //        NSLog(@"https");
+        [manager setSecurityPolicy:[self customSecurityPolicy]];
+    }
+    else {
+        //NSLog(@"http");
+        manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];//不设置会报-1016或者会有编码问题
+    }
     //manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];//不设置会报-1016或者会有编码问题
     manager.requestSerializer = [AFHTTPRequestSerializer serializer]; //不设置会报-1016或者会有编码问题
     manager.responseSerializer = [AFHTTPResponseSerializer serializer]; //不设置会报 error 3840
