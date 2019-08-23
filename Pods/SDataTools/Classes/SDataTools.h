@@ -28,7 +28,7 @@ FOUNDATION_EXPORT const unsigned char SToolsVersionString[];
 //#import "../Mac/NSTask+TRTaskAdditions_termination.h"
 #import "NSTask+TRTaskAdditions_termination.h"
 //#import "../Mac/Proccess/SProccess.h"
-#import "SProccess.h"
+//#import "SProccess.h"
 //! Project version number for SDataToolsLib_Mac.
 FOUNDATION_EXPORT double SDataToolsLib_MacVersionNumber;
 
@@ -47,6 +47,7 @@ FOUNDATION_EXPORT const unsigned char SDataToolsLib_MacVersionString[];
 #import "SNSStringTool.h"
 #import "STimeTool.h"
 #import "SDataConvertTool.h"
+#import "SMathTool.h"
 
 //DataClasses
 #import "ArrayList.h"
@@ -58,7 +59,7 @@ FOUNDATION_EXPORT const unsigned char SDataToolsLib_MacVersionString[];
 
 //Other
 #import "SQueue.h"
-
+#import "STimerManager.h"
 
 
 // In this header, you should import all the public headers of your framework using statements like #import <STools/PublicHeader.h>

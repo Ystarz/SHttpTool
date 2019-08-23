@@ -15,6 +15,9 @@
 +(NSString*)DataToJsonString:(NSDictionary*)object option:(NSJSONWritingOptions)option;
 +(NSDictionary*)JsonToDic:(NSString*)json;
 +(NSDictionary*)DataToDic:(NSData*)data;
++(NSArray*)JsonToArr:(NSString*)json;
++(NSArray*)DataToArr:(NSData*)data;
++(NSDictionary*)plistStrToDic:(NSString*)str;
 +(long long)timeStringToTimeStamp:(NSString*)str;
 
 //+(NSString*)enumToString:(id)enumObject;

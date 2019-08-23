@@ -1,0 +1,6 @@
+framework module SDataTools {
+  umbrella header "SDataTools-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

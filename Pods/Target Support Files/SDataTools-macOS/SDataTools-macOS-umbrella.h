@@ -1,5 +1,5 @@
 #ifdef __OBJC__
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)
@@ -10,9 +10,11 @@
 #endif
 #endif
 
+#import "NSObject+SExtension.h"
 #import "NSString+SExtension.h"
 #import "NSTimer+ChatAdd.h"
 #import "SDataConvertTool.h"
+#import "SMathTool.h"
 #import "SNSStringTool.h"
 #import "STimeTool.h"
 #import "ArrayList.h"
@@ -24,7 +26,8 @@
 #import "SFileTool.h"
 #import "SDataTools.h"
 #import "SQueue.h"
-#import "NSObject+ChatAdd.h"
+#import "STimerManager.h"
+#import "NSTask+TRTaskAdditions_termination.h"
 
 FOUNDATION_EXPORT double SDataToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char SDataToolsVersionString[];

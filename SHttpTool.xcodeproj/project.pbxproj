@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06B7B458883A6637B928C0FB /* Pods_SHttpTool_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E028D28754A760914A2F3C8 /* Pods_SHttpTool_mac.framework */; };
 		1806F8C922CC87CB00CDE022 /* SHttpTool2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1806F8C722CC87CB00CDE022 /* SHttpTool2.h */; };
 		1806F8CA22CC87CB00CDE022 /* SHttpTool2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806F8C822CC87CB00CDE022 /* SHttpTool2.m */; };
 		1806F8CE22CC896D00CDE022 /* SHttpResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1806F8CC22CC896D00CDE022 /* SHttpResult.h */; };
@@ -16,8 +17,15 @@
 		1819277E22BA3830000DB8D2 /* SHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819277A22BA3830000DB8D2 /* SHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1819277F22BA3830000DB8D2 /* SAFNHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1819278022BA3830000DB8D2 /* SAFNHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */; };
+		18CE2853230FB8D0002FF4C3 /* SHttpTool2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1806F8C722CC87CB00CDE022 /* SHttpTool2.h */; };
+		18CE2854230FB8D0002FF4C3 /* SHttpResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1806F8CC22CC896D00CDE022 /* SHttpResult.h */; };
+		18CE2855230FB8D0002FF4C3 /* SAFNHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18CE2856230FB8D0002FF4C3 /* SHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1819277A22BA3830000DB8D2 /* SHttpTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18CE2858230FB8D0002FF4C3 /* SHttpTool2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806F8C822CC87CB00CDE022 /* SHttpTool2.m */; };
+		18CE2859230FB8D0002FF4C3 /* SHttpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806F8CD22CC896D00CDE022 /* SHttpResult.m */; };
+		18CE285A230FB8D0002FF4C3 /* SAFNHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */; };
+		28947964CCF4500AFF3B167C /* Pods_SHttpTool_SHttpToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1855D246A54E2D17D27A4F3 /* Pods_SHttpTool_SHttpToolTests.framework */; };
 		5593A14ED1DC3205934B7464 /* Pods_SHttpTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55938FE29C19CF34A0C26CCF /* Pods_SHttpTool.framework */; };
-		796D45AD08A14D40DE5207CF /* Pods_SHttpToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADB89BA1593FC89613413CA /* Pods_SHttpToolTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +52,16 @@
 		1819277A22BA3830000DB8D2 /* SHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHttpTool.h; sourceTree = "<group>"; };
 		1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFNHttpTool.h; sourceTree = "<group>"; };
 		1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFNHttpTool.m; sourceTree = "<group>"; };
-		55938FE29C19CF34A0C26CCF /* Pods_SHttpTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ADB89BA1593FC89613413CA /* Pods_SHttpToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CE2861230FB8D0002FF4C3 /* SHttpTool_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHttpTool_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CE2862230FB8D0002FF4C3 /* SHttpTool copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SHttpTool copy-Info.plist"; path = "/Users/sss/sjf/IOS/Library/SHttpTool/SHttpTool copy-Info.plist"; sourceTree = "<absolute>"; };
+		2E028D28754A760914A2F3C8 /* Pods_SHttpTool_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF99E2A550E6A43319EA91A /* Pods-SHttpTool-SHttpToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool-SHttpToolTests.debug.xcconfig"; path = "Target Support Files/Pods-SHttpTool-SHttpToolTests/Pods-SHttpTool-SHttpToolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AFBA98D8F3A9EB181EAFA6B /* Pods-SHttpToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpToolTests.debug.xcconfig"; path = "Target Support Files/Pods-SHttpToolTests/Pods-SHttpToolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		743150BDB3CD542745587B49 /* Pods-SHttpTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool.release.xcconfig"; path = "Target Support Files/Pods-SHttpTool/Pods-SHttpTool.release.xcconfig"; sourceTree = "<group>"; };
+		7B0069F484AE704773845FC4 /* Pods-SHttpTool_mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool_mac.debug.xcconfig"; path = "Target Support Files/Pods-SHttpTool_mac/Pods-SHttpTool_mac.debug.xcconfig"; sourceTree = "<group>"; };
+		C1855D246A54E2D17D27A4F3 /* Pods_SHttpTool_SHttpToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool_SHttpToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE72DA6F93D791BB06C84DF /* Pods-SHttpTool_mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool_mac.release.xcconfig"; path = "Target Support Files/Pods-SHttpTool_mac/Pods-SHttpTool_mac.release.xcconfig"; sourceTree = "<group>"; };
+		DA318D56DAB25B80D5C3B524 /* Pods-SHttpTool-SHttpToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpTool-SHttpToolTests.release.xcconfig"; path = "Target Support Files/Pods-SHttpTool-SHttpToolTests/Pods-SHttpTool-SHttpToolTests.release.xcconfig"; sourceTree = "<group>"; };
 		F951D174964BD5442FEC4E44 /* Pods-SHttpToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHttpToolTests.release.xcconfig"; path = "Target Support Files/Pods-SHttpToolTests/Pods-SHttpToolTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +79,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1819276922BA36B9000DB8D2 /* SHttpTool.framework in Frameworks */,
-				796D45AD08A14D40DE5207CF /* Pods_SHttpToolTests.framework in Frameworks */,
+				28947964CCF4500AFF3B167C /* Pods_SHttpTool_SHttpToolTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CE285B230FB8D0002FF4C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B7B458883A6637B928C0FB /* Pods_SHttpTool_mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +111,7 @@
 				1819276022BA36B8000DB8D2 /* Products */,
 				CC8FA692D92FFEAF87E9E543 /* Pods */,
 				C68274EBFCA2AF3DD7F5149F /* Frameworks */,
+				18CE2862230FB8D0002FF4C3 /* SHttpTool copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +120,7 @@
 			children = (
 				1819275F22BA36B8000DB8D2 /* SHttpTool.framework */,
 				1819276822BA36B9000DB8D2 /* SHttpToolTests.xctest */,
+				18CE2861230FB8D0002FF4C3 /* SHttpTool_mac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,8 +159,8 @@
 		C68274EBFCA2AF3DD7F5149F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55938FE29C19CF34A0C26CCF /* Pods_SHttpTool.framework */,
-				6ADB89BA1593FC89613413CA /* Pods_SHttpToolTests.framework */,
+				C1855D246A54E2D17D27A4F3 /* Pods_SHttpTool_SHttpToolTests.framework */,
+				2E028D28754A760914A2F3C8 /* Pods_SHttpTool_mac.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +172,10 @@
 				743150BDB3CD542745587B49 /* Pods-SHttpTool.release.xcconfig */,
 				6AFBA98D8F3A9EB181EAFA6B /* Pods-SHttpToolTests.debug.xcconfig */,
 				F951D174964BD5442FEC4E44 /* Pods-SHttpToolTests.release.xcconfig */,
+				4BF99E2A550E6A43319EA91A /* Pods-SHttpTool-SHttpToolTests.debug.xcconfig */,
+				DA318D56DAB25B80D5C3B524 /* Pods-SHttpTool-SHttpToolTests.release.xcconfig */,
+				7B0069F484AE704773845FC4 /* Pods-SHttpTool_mac.debug.xcconfig */,
+				CBE72DA6F93D791BB06C84DF /* Pods-SHttpTool_mac.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,6 +191,17 @@
 				1806F8CE22CC896D00CDE022 /* SHttpResult.h in Headers */,
 				1819277F22BA3830000DB8D2 /* SAFNHttpTool.h in Headers */,
 				1819277E22BA3830000DB8D2 /* SHttpTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CE2852230FB8D0002FF4C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CE2853230FB8D0002FF4C3 /* SHttpTool2.h in Headers */,
+				18CE2854230FB8D0002FF4C3 /* SHttpResult.h in Headers */,
+				18CE2855230FB8D0002FF4C3 /* SAFNHttpTool.h in Headers */,
+				18CE2856230FB8D0002FF4C3 /* SHttpTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +235,7 @@
 				1819276422BA36B9000DB8D2 /* Sources */,
 				1819276522BA36B9000DB8D2 /* Frameworks */,
 				1819276622BA36B9000DB8D2 /* Resources */,
+				DEE786CBA05E35C017CAE48A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +246,25 @@
 			productName = SHttpToolTests;
 			productReference = 1819276822BA36B9000DB8D2 /* SHttpToolTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18CE2850230FB8D0002FF4C3 /* SHttpTool_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CE285E230FB8D0002FF4C3 /* Build configuration list for PBXNativeTarget "SHttpTool_mac" */;
+			buildPhases = (
+				18CE2851230FB8D0002FF4C3 /* [CP] Check Pods Manifest.lock */,
+				18CE2852230FB8D0002FF4C3 /* Headers */,
+				18CE2857230FB8D0002FF4C3 /* Sources */,
+				18CE285B230FB8D0002FF4C3 /* Frameworks */,
+				18CE285D230FB8D0002FF4C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SHttpTool_mac;
+			productName = SHttpTool;
+			productReference = 18CE2861230FB8D0002FF4C3 /* SHttpTool_mac.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -238,6 +297,7 @@
 			targets = (
 				1819275E22BA36B8000DB8D2 /* SHttpTool */,
 				1819276722BA36B9000DB8D2 /* SHttpToolTests */,
+				18CE2850230FB8D0002FF4C3 /* SHttpTool_mac */,
 			);
 		};
 /* End PBXProject section */
@@ -257,9 +317,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18CE285D230FB8D0002FF4C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18CE2851230FB8D0002FF4C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHttpTool_mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		60212B7A2B5F49865CA91B63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,11 +386,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SHttpToolTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SHttpTool-SHttpToolTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE786CBA05E35C017CAE48A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHttpTool-SHttpToolTests/Pods-SHttpTool-SHttpToolTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHttpTool-SHttpToolTests/Pods-SHttpTool-SHttpToolTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SHttpTool-SHttpToolTests/Pods-SHttpTool-SHttpToolTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -322,6 +428,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1819276E22BA36B9000DB8D2 /* SHttpToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CE2857230FB8D0002FF4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CE2858230FB8D0002FF4C3 /* SHttpTool2.m in Sources */,
+				18CE2859230FB8D0002FF4C3 /* SHttpResult.m in Sources */,
+				18CE285A230FB8D0002FF4C3 /* SAFNHttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +505,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -445,6 +562,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -458,6 +576,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 161183CFEF01D378667658E5 /* Pods-SHttpTool.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -473,7 +596,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sss.SHttpTool;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -485,6 +608,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 743150BDB3CD542745587B49 /* Pods-SHttpTool.release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -510,7 +638,7 @@
 		};
 		1819277722BA36B9000DB8D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AFBA98D8F3A9EB181EAFA6B /* Pods-SHttpToolTests.debug.xcconfig */;
+			baseConfigurationReference = 4BF99E2A550E6A43319EA91A /* Pods-SHttpTool-SHttpToolTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5442CQNN;
@@ -528,7 +656,7 @@
 		};
 		1819277822BA36B9000DB8D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F951D174964BD5442FEC4E44 /* Pods-SHttpToolTests.release.xcconfig */;
+			baseConfigurationReference = DA318D56DAB25B80D5C3B524 /* Pods-SHttpTool-SHttpToolTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6H5442CQNN;
@@ -540,6 +668,72 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sss.SHttpToolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18CE285F230FB8D0002FF4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B0069F484AE704773845FC4 /* Pods-SHttpTool_mac.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+				);
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6H5442CQNN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "SHttpTool copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sss.SHttpTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18CE2860230FB8D0002FF4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE72DA6F93D791BB06C84DF /* Pods-SHttpTool_mac.release.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+					armv7s,
+				);
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6H5442CQNN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "SHttpTool copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sss.SHttpTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -570,6 +764,15 @@
 			buildConfigurations = (
 				1819277722BA36B9000DB8D2 /* Debug */,
 				1819277822BA36B9000DB8D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CE285E230FB8D0002FF4C3 /* Build configuration list for PBXNativeTarget "SHttpTool_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CE285F230FB8D0002FF4C3 /* Debug */,
+				18CE2860230FB8D0002FF4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

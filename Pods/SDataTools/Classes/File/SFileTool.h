@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(long long) getFileSizeAtPath:(NSString *)path;
 +(NSArray*)getTextArrFromFile:(NSString*)filePath;
++(NSString*)getStringFromFile:(NSString*)filePath;
 +(void) writeToFile:(NSString *)path contentArr:(NSArray *)arr;
 +(bool)createDir:(NSString*)path;
 +(bool)isFileExist:(NSString*)path;
@@ -28,8 +29,11 @@ NS_ASSUME_NONNULL_BEGIN
 +(bool)moveFile:(NSString*)filePath to:(NSString*)destinationPath isForce:(bool)force;
 +(bool)renameAtPath:(NSString*)filePath to:(NSString*)destinationPath isForce:(bool)force;
 +(bool)deleteFile:(NSString*)path;
++(bool)deleteDir:(NSString*)path;
 
++(NSArray*)getAllFileNameInDir:(NSString*)dir;
 +(NSString*)fileMD5:(NSString*)path;
++(NSString *)fileSHA1:(NSString *)path;
 
 +(long long) getFileBytes:(NSString *)path;
 @end

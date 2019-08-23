@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1BEB433AD26A69AA5814D185D5498370"
-               BuildableName = "Pods_SHttpToolTests.framework"
-               BlueprintName = "Pods-SHttpToolTests"
+               BlueprintIdentifier = "CF384DEB36F31A56403ACBC8AD9DB514"
+               BuildableName = "Pods_SHttpTool_mac.framework"
+               BlueprintName = "Pods-SHttpTool_mac"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1BEB433AD26A69AA5814D185D5498370"
-            BuildableName = "Pods_SHttpToolTests.framework"
-            BlueprintName = "Pods-SHttpToolTests"
+            BlueprintIdentifier = "CF384DEB36F31A56403ACBC8AD9DB514"
+            BuildableName = "Pods_SHttpTool_mac.framework"
+            BlueprintName = "Pods-SHttpTool_mac"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

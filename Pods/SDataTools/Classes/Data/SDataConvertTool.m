@@ -29,11 +29,10 @@
 #else
 #   error "Unknown Apple platform"
 #endif
-    {
+    //上面情况都不符合,跑这个
         NSString*str=[SDataConvertTool DataToJsonString:object option:NSJSONWritingPrettyPrinted];
         str=[NSString removeNewline:str];
         return str;
-    }
 }
 
 
@@ -70,6 +69,26 @@
     }
     NSDictionary* obj = (NSDictionary*)[NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
     return obj;
+}
++(NSDictionary*)plistStrToDic:(NSString*)str{
+    NSData* plistData = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSPropertyListFormat format;
+    NSDictionary* plist =[NSPropertyListSerialization propertyListWithData:plistData options:NSPropertyListImmutable format:&format error:&error];
+//    NSDictionary* plist = [NSPropertyListSerialization propertyListFromData:plistData mutabilityOption:NSPropertyListImmutable format:&format errorDescription:&error];
+    NSLog( @"plist is %@", plist );
+    if(!plist){
+        NSLog(@"Error: %@",error);
+    }
+    return plist;
+}
+
++(NSArray*)JsonToArr:(NSString*)json{
+    return (NSArray*)[SDataConvertTool JsonToDic:json];
+}
+
++(NSArray*)DataToArr:(NSData*)data{
+    return (NSArray*)[SDataConvertTool DataToDic:data];
 }
 
 +(long long)timeStringToTimeStamp:(NSString*)str{

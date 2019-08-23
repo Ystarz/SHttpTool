@@ -1,0 +1,6 @@
+framework module Pods_SHttpTool_SHttpToolTests {
+  umbrella header "Pods-SHttpTool-SHttpToolTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

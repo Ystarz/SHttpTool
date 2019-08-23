@@ -1,2 +1,8 @@
 
 *.podspec
+
+Podfile
+
+Podfile\.lock
+
+Podfile1

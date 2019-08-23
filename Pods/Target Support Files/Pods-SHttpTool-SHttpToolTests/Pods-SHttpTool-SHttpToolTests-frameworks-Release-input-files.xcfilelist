@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SHttpTool-SHttpToolTests/Pods-SHttpTool-SHttpToolTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/SDataTools-iOS/SDataTools.framework

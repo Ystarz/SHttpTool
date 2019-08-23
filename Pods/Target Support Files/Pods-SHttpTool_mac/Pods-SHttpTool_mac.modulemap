@@ -1,0 +1,6 @@
+framework module Pods_SHttpTool_mac {
+  umbrella header "Pods-SHttpTool_mac-umbrella.h"
+
+  export *
+  module * { export * }
+}

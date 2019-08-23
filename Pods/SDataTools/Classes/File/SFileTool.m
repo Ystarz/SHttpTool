@@ -27,17 +27,30 @@
 
 +(NSArray*)getTextArrFromFile:(NSString*)filePath{
     NSArray *fileData;
-    NSError *error;
-    
-    //读取file文件并把内容根据换行符分割后赋值给NSArray
-    fileData = [[NSString stringWithContentsOfFile:filePath
-                                          encoding:NSUTF8StringEncoding
-                                             error:&error]
-                componentsSeparatedByString:@"\n"];
+    fileData=[[SFileTool getStringFromFile:filePath]componentsSeparatedByString:@"\n"];
     return fileData;
+//    NSError *error;
+//
+//    //读取file文件并把内容根据换行符分割后赋值给NSArray
+//    fileData = [[NSString stringWithContentsOfFile:filePath
+//                                          encoding:NSUTF8StringEncoding
+//                                             error:&error]
+//                componentsSeparatedByString:@"\n"];
+//    return fileData;
     
     
     }
+
++(NSString*)getStringFromFile:(NSString*)filePath{
+    NSString *fileData;
+    NSError *error;
+    
+    //读取file文件并把内容根据换行符分割后赋值给NSArray
+    fileData = [NSString stringWithContentsOfFile:filePath
+                                          encoding:NSUTF8StringEncoding
+                                             error:&error];
+    return fileData;  
+}
 
 +(void) writeToFile:(NSString *)path contentArr:(NSArray *)arr{
 //    NSError *error = nil;
@@ -94,32 +107,77 @@
 
 
 +(bool)copyFile:(NSString*)filePath to:(NSString*)destinationPath isForce:(bool)force{
-    if ([SFileTool isFileExist:destinationPath]&&!force) {
-        return true;
+    if ([SFileTool isFileExist:destinationPath]) {
+        if (!force) {
+            return true;
+        }
+        [SFileTool deleteFile:destinationPath];
     }
-     NSFileManager *fileManager = [NSFileManager defaultManager];
-   return [fileManager copyItemAtPath:filePath toPath:destinationPath error:nil];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager copyItemAtPath:filePath toPath:destinationPath error:nil];
 }
 
 +(bool)deleteFile:(NSString*)path{
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isDir=false;
     if([fileManager fileExistsAtPath:path isDirectory:&isDir]){
-       return [fileManager removeItemAtPath:path error:nil];
+        bool result= [fileManager removeItemAtPath:path error:nil];
+        sleep(0.5);
+        return result;
+    }
+    else{
+        return true;}
+}
+
++(bool)deleteDir:(NSString*)path{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL isDir=true;
+    if([fileManager fileExistsAtPath:path isDirectory:&isDir]){
+        bool result=[fileManager removeItemAtPath:path error:nil];
+        sleep(0.5);
+        return result;
     }
     else{
         return true;}
 }
 
 +(NSString*)fileMD5:(NSString*)path
-
 {
-    
     return (__bridge_transfer NSString *)FileMD5HashCreateWithPath((__bridge CFStringRef)path, FileHashDefaultChunkSizeForReadingData);
-    
 }
 
++(NSString *)fileSHA1:(NSString *)path
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    // Make sure the file exists
+    if( [fileManager fileExistsAtPath:path isDirectory:nil] )
+    {
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        unsigned char digest[CC_SHA1_DIGEST_LENGTH];
+        CC_SHA1( data.bytes, (CC_LONG)data.length, digest );
+        NSMutableString *output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
+        for( int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++ )
+        {
+            [output appendFormat:@"%02x", digest[i]];
+        }
+        
+        return output;
+    }
+    else
+    {
+        return @"";
+    }
+}
 
++(NSArray*)getAllFileNameInDir:(NSString*)dir{
+    if(![SFileTool isDirExist:dir]){
+        return [NSArray new];
+    }
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager contentsOfDirectoryAtPath:dir error:nil];
+    
+}
 
 //+(NSString*)fileMD5:(NSString*)path
 //{

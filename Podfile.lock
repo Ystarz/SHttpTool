@@ -14,21 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - SDataTools (0.2.3)
+  - SDataTools (0.3.8)
 
 DEPENDENCIES:
   - AFNetworking
   - SDataTools
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - SDataTools
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  SDataTools: ed79cbf7654f91b34ac5d19d244984526074bbf0
+  SDataTools: 8807b38d8a5ebacf3edde3e77bf7a2d00e16c0cb
 
-PODFILE CHECKSUM: c4972ef0991d4620671eb4535b30bed18714fb4a
+PODFILE CHECKSUM: f06b766c2c33991b883a7b558fbd91ba6ac7a22c
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.8.0.beta.1
