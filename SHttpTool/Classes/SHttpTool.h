@@ -6,7 +6,7 @@
 //  Copyright © 2019 SSS. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 
 #import "SHttpTool2.h"
 //#import "SAFNHttpTool.h"

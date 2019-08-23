@@ -6,7 +6,7 @@
 //  Copyright © 2019 SSS. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
 #import "SHttpResult.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^SHttpResultBlock)(SHttpResult*result);
