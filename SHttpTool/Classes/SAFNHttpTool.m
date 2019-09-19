@@ -11,6 +11,7 @@
 #import <AFNetworking/AFNetworking.h>
 
 @implementation SAFNHttpTool
+#pragma mark post
 +(void)postWithUrl:(NSString*)url
              param:(NSString*)param
            success:(void(^)(NSDictionary *dict))success
@@ -84,5 +85,61 @@
     }
     
     return securityPolicy;
+}
+
+#pragma mark get
++(void)getWithUrl:(NSString*)url
+            param:(NSDictionary*)paramDict
+           success:(void(^)(NSDictionary *dict))success
+              fail:(void (^)(NSError *error))fail
+//-(void)getPayInfoByUrl:(NSString*)url completeBlock:(void(^)(NSDictionary *dict))complete fail:(void(^)(NSString *msg))fail
+{
+    //1.创建会话管理者
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //NSDictionary *paramDict = @{};
+    if (!paramDict) {
+        paramDict = @{};
+    }
+    //2.发送GET请求
+    /*
+     第一个参数:请求路径(不包含参数).NSString
+     第二个参数:字典(发送给服务器的数据~参数)
+     第三个参数:progress 进度回调
+     第四个参数:success 成功回调
+     task:请求任务
+     responseObject:响应体信息(JSON--->OC对象)
+     第五个参数:failure 失败回调
+     error:错误信息
+     响应头:task.response
+     */
+    [manager GET:url parameters:paramDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        //        OCLOG(@"getPayInfoByUrl response %@\n", [responseObject class],responseObject); //JSON格式转换成字典，IOS5中自带解析类NSJSONSerialization从response中解析出数据放到字典中
+        id obj = responseObject;//[NSJSONSerialization JSONObjectWithData:responseObject options:0 error:NULL];
+        if (obj){
+            success(obj);
+        }
+        else{
+            NSDictionary *userInfo = @{
+                                       NSLocalizedDescriptionKey: @"responseObject is Null.",
+                                       NSLocalizedFailureReasonErrorKey:@"responseObject is Null."
+                                       };
+            NSError*err=[[NSError alloc]initWithDomain:NSURLErrorDomain code:200 userInfo:userInfo];
+            fail(err);
+            //fail(@"fail after return");
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败--%@",error);
+//        fail(@"fail to ask");
+//        NSDictionary *userInfo = @{
+//                                   NSLocalizedDescriptionKey: @"responseObject is Null.",
+//                                   NSLocalizedFailureReasonErrorKey:@"responseObject is Null."
+//                                   };
+//        NSError*err=[[NSError alloc]initWithDomain:NSURLErrorDomain code:404 userInfo:userInfo];
+        fail(error);
+    }];
+    
+    
 }
 @end

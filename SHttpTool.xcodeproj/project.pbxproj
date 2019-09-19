@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,7 +25,7 @@
 		18CE2859230FB8D0002FF4C3 /* SHttpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806F8CD22CC896D00CDE022 /* SHttpResult.m */; };
 		18CE285A230FB8D0002FF4C3 /* SAFNHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */; };
 		28947964CCF4500AFF3B167C /* Pods_SHttpTool_SHttpToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1855D246A54E2D17D27A4F3 /* Pods_SHttpTool_SHttpToolTests.framework */; };
-		5593A14ED1DC3205934B7464 /* Pods_SHttpTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55938FE29C19CF34A0C26CCF /* Pods_SHttpTool.framework */; };
+		5593A14ED1DC3205934B7464 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +52,8 @@
 		1819277A22BA3830000DB8D2 /* SHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHttpTool.h; sourceTree = "<group>"; };
 		1819277C22BA3830000DB8D2 /* SAFNHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAFNHttpTool.h; sourceTree = "<group>"; };
 		1819277D22BA3830000DB8D2 /* SAFNHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAFNHttpTool.m; sourceTree = "<group>"; };
+		18AF97212332792700D78DD1 /* NSError+SSType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+SSType.h"; sourceTree = "<group>"; };
+		18AF97222332792700D78DD1 /* NSError+SSType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+SSType.m"; sourceTree = "<group>"; };
 		18CE2861230FB8D0002FF4C3 /* SHttpTool_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHttpTool_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CE2862230FB8D0002FF4C3 /* SHttpTool copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SHttpTool copy-Info.plist"; path = "/Users/sss/sjf/IOS/Library/SHttpTool/SHttpTool copy-Info.plist"; sourceTree = "<absolute>"; };
 		2E028D28754A760914A2F3C8 /* Pods_SHttpTool_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5593A14ED1DC3205934B7464 /* Pods_SHttpTool.framework in Frameworks */,
+				5593A14ED1DC3205934B7464 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +101,8 @@
 			children = (
 				1806F8CC22CC896D00CDE022 /* SHttpResult.h */,
 				1806F8CD22CC896D00CDE022 /* SHttpResult.m */,
+				18AF97212332792700D78DD1 /* NSError+SSType.h */,
+				18AF97222332792700D78DD1 /* NSError+SSType.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";

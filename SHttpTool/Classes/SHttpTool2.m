@@ -42,6 +42,14 @@
     }
     [SHttpTool2 doPostWithUrl:url param:param success:success fail:fail];
 }
++(void)getWithUrl:(NSString*)url param:(NSDictionary*)param success:(void(^)(SHttpResult *result))success fail:(void (^)(SHttpResult *result))fail{
+    bool isCanAdd=  [[SHttpTool2 sharedInstance]addToActivePoolWithUrl:url];
+    if (!isCanAdd) {
+        [[SHttpTool2 sharedInstance]rejectRequest:fail];
+        return;
+    }
+    [SHttpTool2 doGetWithUrl:url param:param success:success fail:fail];
+}
 
 +(void)doPostWithUrl:(NSString*)url param:(NSString*)param success:(SHttpResultBlock) success fail:(SHttpResultBlock) fail {
     [SAFNHttpTool postWithUrl:url param:param success:^(NSDictionary *dict) {
@@ -49,6 +57,18 @@
     } fail:^(NSError *error) {
         if ([[SHttpTool2 sharedInstance]isRepeatRequest:url]) {
             [SHttpTool2 doPostWithUrl:url param:param success:success fail:fail];
+            return ;
+        }
+        [[SHttpTool2 sharedInstance]fail:url resultBlock:fail withData:error];
+    }];
+}
+
++(void)doGetWithUrl:(NSString*)url param:(NSDictionary*)param success:(SHttpResultBlock) success fail:(SHttpResultBlock) fail {
+    [SAFNHttpTool getWithUrl:url param:param success:^(NSDictionary *dict) {
+        [[SHttpTool2 sharedInstance]success:url resultBlock:success withData:dict];
+    } fail:^(NSError *error) {
+        if ([[SHttpTool2 sharedInstance]isRepeatRequest:url]) {
+            [SHttpTool2 doGetWithUrl:url param:param success:success fail:fail];
             return ;
         }
         [[SHttpTool2 sharedInstance]fail:url resultBlock:fail withData:error];

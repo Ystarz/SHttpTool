@@ -17,6 +17,7 @@ typedef void(^SHttpResultBlock)(SHttpResult*result);
 
 +(instancetype)sharedInstance;
 +(void)postWithUrl:(NSString*)url param:(NSString*)param success:(void(^)(SHttpResult *result))success fail:(void (^)(SHttpResult *result))fail;
++(void)getWithUrl:(NSString*)url param:(NSDictionary*)param success:(void(^)(SHttpResult *result))success fail:(void (^)(SHttpResult *result))fail;
 @end
 
 NS_ASSUME_NONNULL_END
