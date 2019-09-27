@@ -87,6 +87,46 @@
     return securityPolicy;
 }
 
++(void)postWithUrl:(NSString *)uploadUrl data:(NSData*)data fileName:(NSString*)fileName mimeType:(NSString*)mime
+           success:(void(^)(NSDictionary *dict))success
+              fail:(void (^)(NSError *error))fail
+{
+    
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:uploadUrl parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
+                                    {
+                                        /*
+                                         *该方法的参数
+                                         1. appendPartWithFileData：要上传的照片[二进制流]
+                                         2. name：对应网站上[upload.php中]处理文件的字段（比如upload）
+                                         3. fileName：要保存在服务器上的文件名
+                                         4. mimeType：上传的文件的类型
+                                         */
+                                        [formData appendPartWithFileData:data name:@"file" fileName:fileName mimeType:mime]; //
+                                        
+                                    } error:nil];
+    
+    
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSURLSessionUploadTask *uploadTask;
+    uploadTask = [manager
+                  uploadTaskWithStreamedRequest:request
+                  progress:^(NSProgress * _Nonnull uploadProgress) {
+
+                  }
+                  completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+                      if(!error){
+                          NSDictionary * obj = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+                          success(obj);
+                          //success(responseObject);
+                      }
+                      else fail(error);
+                  }];
+    
+    [uploadTask resume];
+    
+}
+
 #pragma mark get
 +(void)getWithUrl:(NSString*)url
             param:(NSDictionary*)paramDict
