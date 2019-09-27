@@ -12,5 +12,5 @@
 @interface SAFNHttpTool : NSObject
 +(void)postWithUrl:(NSString*)url param:(NSString*)param success:(void(^)(NSDictionary *dict))success fail:(void (^)(NSError *error))fail;
 +(void)postWithUrl:(NSString *)uploadUrl data:(NSData*)data fileName:(NSString*)fileName mimeType:(NSString*)mime success:(void(^)(NSDictionary *dict))success fail:(void (^)(NSError *error))fail;
-+(void)getWithUrl:(NSString*)url param:(NSDictionary*)paramDict success:(void(^)(NSDictionary *dict))success fail:(void (^)(NSError *error))fail;
++(void)getWithUrl:(NSString*)url param:(NSDictionary* _Nullable )paramDict success:(void(^)(NSDictionary *dict))success fail:(void (^)(NSError *error))fail;
 @end

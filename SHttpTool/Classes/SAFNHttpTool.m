@@ -129,7 +129,7 @@
 
 #pragma mark get
 +(void)getWithUrl:(NSString*)url
-            param:(NSDictionary*)paramDict
+            param:(NSDictionary* _Nullable)paramDict
            success:(void(^)(NSDictionary *dict))success
               fail:(void (^)(NSError *error))fail
 //-(void)getPayInfoByUrl:(NSString*)url completeBlock:(void(^)(NSDictionary *dict))complete fail:(void(^)(NSString *msg))fail
