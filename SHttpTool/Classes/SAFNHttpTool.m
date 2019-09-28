@@ -87,12 +87,12 @@
     return securityPolicy;
 }
 
-+(void)postWithUrl:(NSString *)uploadUrl data:(NSData*)data fileName:(NSString*)fileName mimeType:(NSString*)mime
++(void)postWithUrl:(NSString *)uploadUrl param:(NSDictionary* _Nullable)param data:(NSData*)data fileName:(NSString*)fileName mimeType:(NSString*)mime
            success:(void(^)(NSDictionary *dict))success
               fail:(void (^)(NSError *error))fail
 {
     
-    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:uploadUrl parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:uploadUrl parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
                                     {
                                         /*
                                          *该方法的参数

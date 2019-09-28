@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -198,7 +198,7 @@
 
 /* Begin PBXFileReference section */
 		02A85991C18E27280C5CD247CF5A3533 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		0451FC69C82D000F19A1AFA6D4F66FF1 /* Pods_SHttpTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0451FC69C82D000F19A1AFA6D4F66FF1 /* Pods_SHttpTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SHttpTool.framework; path = "Pods-SHttpTool.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D6CB267C71980A0093D8865B6D7594 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		061048B143A516D9AE484B08887E4803 /* LinkedList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LinkedList.h; path = Classes/DataClasses/LinkedList.h; sourceTree = "<group>"; };
 		0733292809318A843BA029DC0A68177A /* Pods-SHttpTool_mac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SHttpTool_mac-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -252,8 +252,8 @@
 		6240D38DA4295E47B52AF0940960A1AF /* Pods-SHttpTool_mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHttpTool_mac.debug.xcconfig"; sourceTree = "<group>"; };
 		63F1BF8E3CFE9D2045DD2DAD915134FD /* SFileTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SFileTool.h; path = Classes/File/SFileTool.h; sourceTree = "<group>"; };
 		6500DBB4A9B81F7097CB2D6B0B84AE52 /* SFileTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SFileTool.m; path = Classes/File/SFileTool.m; sourceTree = "<group>"; };
-		6506C146EEF40E30B8FB2C1C6CDBEB26 /* Pods_SHttpTool_SHttpToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool_SHttpToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65134CE2E7D9CC31F8DBF59C10200621 /* NSTask+TRTaskAdditions_termination.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSTask+TRTaskAdditions_termination.mm"; path = "Mac/NSTask/NSTask+TRTaskAdditions_termination.mm"; sourceTree = "<group>"; };
+		6506C146EEF40E30B8FB2C1C6CDBEB26 /* Pods_SHttpTool_SHttpToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SHttpTool_SHttpToolTests.framework; path = "Pods-SHttpTool-SHttpToolTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65134CE2E7D9CC31F8DBF59C10200621 /* NSTask+TRTaskAdditions_termination.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "NSTask+TRTaskAdditions_termination.mm"; path = "Mac/NSTask/NSTask+TRTaskAdditions_termination.mm"; sourceTree = "<group>"; };
 		6604B0DC460FF0F3C1DE4BCCEA0EC6C8 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		66B9852ADF909C595119FB27E58A4DF5 /* Pods-SHttpTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SHttpTool-Info.plist"; sourceTree = "<group>"; };
 		6BAF75FF2F0D67DFD3E26265B68C26F2 /* LoopQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoopQueue.h; path = Classes/DataClasses/LoopQueue.h; sourceTree = "<group>"; };
@@ -269,7 +269,7 @@
 		836A627DDA3B0845F434BED0910FC980 /* NSObject+SExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SExtension.m"; path = "Classes/Data/NSObject+SExtension.m"; sourceTree = "<group>"; };
 		85CC3736F08C797718B0D4CC44FF2CC3 /* SMathTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SMathTool.h; path = Classes/Data/SMathTool.h; sourceTree = "<group>"; };
 		886CB166F762B10C439CA8B076C560D0 /* NSObject+ChatAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ChatAdd.m"; path = "iOS/NSObject+ChatAdd.m"; sourceTree = "<group>"; };
-		89DC3CF5D938A26C8A3AE40A2ACD81F1 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89DC3CF5D938A26C8A3AE40A2ACD81F1 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = "AFNetworking-c94d3492.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E1C445D9D880AD823BC46D33E198B7 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		8BB4284EC4E7471DA4C11FEF980AF4B0 /* Pods-SHttpTool_mac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SHttpTool_mac-Info.plist"; sourceTree = "<group>"; };
 		8C17AB95BF0E78DAFE273262220AF37B /* ArrayList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ArrayList.m; path = Classes/DataClasses/ArrayList.m; sourceTree = "<group>"; };
@@ -284,10 +284,10 @@
 		937FAF924CC471AEC0C64FE3623ACFAE /* NSString+SExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SExtension.h"; path = "Classes/Data/NSString+SExtension.h"; sourceTree = "<group>"; };
 		95D9CF1A403E3C19E10F2559D252E5EA /* STimeTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STimeTool.m; path = Classes/Data/STimeTool.m; sourceTree = "<group>"; };
 		9BBB552D399C084FA7042EEA39B66F88 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0E26E61E6E4EFDD3C00BF9EFAE550E9 /* Pods-SHttpTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHttpTool.debug.xcconfig"; sourceTree = "<group>"; };
 		A4187B7EB2B9C19D8F4C83E6DA3835F1 /* AFNetworking-c94d3492-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AFNetworking-c94d3492-prefix.pch"; path = "../AFNetworking-c94d3492/AFNetworking-c94d3492-prefix.pch"; sourceTree = "<group>"; };
-		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC46A1E732107AAF4EFA5CDE88C5768E /* Pods-SHttpTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SHttpTool-umbrella.h"; sourceTree = "<group>"; };
 		AEC9613B3692F4F59FC42FAF53BE9E74 /* NSObject+SExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+SExtension.h"; path = "Classes/Data/NSObject+SExtension.h"; sourceTree = "<group>"; };
 		AFF30AF25E922C1E7B7A1477229EDF7D /* LinkedList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LinkedList.m; path = Classes/DataClasses/LinkedList.m; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 		CDEC0251CAFE33A83B3F1FEE50EE73BF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		D20ABA63F815146679152A1FE2E8302A /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		D2A572B8BEC9F559733938EEB14A1485 /* SDataTools-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDataTools-iOS-prefix.pch"; sourceTree = "<group>"; };
-		D2BADFD586F781BC61790D9209C9A9A0 /* SDataTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDataTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2BADFD586F781BC61790D9209C9A9A0 /* SDataTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDataTools.framework; path = "SDataTools-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BBC4B9E9F8038AD07F211EF400B7BA /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		D6A2CD62A53FCE434E467BCB19D6717A /* AFNetworking-c94d3492.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "AFNetworking-c94d3492.modulemap"; path = "../AFNetworking-c94d3492/AFNetworking-c94d3492.modulemap"; sourceTree = "<group>"; };
 		D7CADFCBA35542747EEF5A3D8ACD86A6 /* SDataTools-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SDataTools-iOS.xcconfig"; sourceTree = "<group>"; };
@@ -319,7 +319,7 @@
 		E45481A60E043B888A329F4EB4BE791C /* ArrayList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ArrayList.h; path = Classes/DataClasses/ArrayList.h; sourceTree = "<group>"; };
 		E4B58538211A78A245AF08A785615E39 /* SDataTools-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SDataTools-macOS-prefix.pch"; path = "../SDataTools-macOS/SDataTools-macOS-prefix.pch"; sourceTree = "<group>"; };
 		E5B88F9FC9D2A0F0E4820719F285DA00 /* SDataTools-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDataTools-iOS-dummy.m"; sourceTree = "<group>"; };
-		E61BEDF397B8747E95CE684F4AE83F41 /* SDataTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDataTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E61BEDF397B8747E95CE684F4AE83F41 /* SDataTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDataTools.framework; path = "SDataTools-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E732C3809DB5982667EEEEB4AD13773C /* LoopQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoopQueue.m; path = Classes/DataClasses/LoopQueue.m; sourceTree = "<group>"; };
 		E7DCBC0ABE29FA7EC3E3B547AD96C3A7 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		ED9CEB09315301D1CEB45F4238B2D6FD /* Pods-SHttpTool_mac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SHttpTool_mac-umbrella.h"; sourceTree = "<group>"; };
@@ -330,7 +330,7 @@
 		F19F4DB9121600B1B72BE2BCF41E5176 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		F4703DDF819BEFAECCE2A7E010B741EE /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 		FB4CBEC28D81B2110D98F8A140DE12DE /* Pods-SHttpTool-SHttpToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHttpTool-SHttpToolTests.release.xcconfig"; sourceTree = "<group>"; };
-		FDA03A26FED33BFB77F98FD598D269EA /* Pods_SHttpTool_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHttpTool_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA03A26FED33BFB77F98FD598D269EA /* Pods_SHttpTool_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SHttpTool_mac.framework; path = "Pods-SHttpTool_mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC3FD4E898264B32C6485B139256F27 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -421,6 +421,7 @@
 				F702E9042E18F4FF5ED2CD5AFF6F2AC2 /* Support Files */,
 				FADE3F684FD708884E43771A9009FD2D /* UIKit */,
 			);
+			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -489,6 +490,7 @@
 				95D9CF1A403E3C19E10F2559D252E5EA /* STimeTool.m */,
 				74A6C61D92739EFBFB864F92D8009966 /* Support Files */,
 			);
+			name = SDataTools;
 			path = SDataTools;
 			sourceTree = "<group>";
 		};
@@ -958,7 +960,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1271,7 +1273,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1843,7 +1844,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;

@@ -25,6 +25,12 @@
     return  [[NSNumber numberWithDouble:time] longLongValue];
 }
 
++(int)getNowTimeStampInt{
+    NSDate* date = [NSDate dateWithTimeIntervalSinceNow:0];//获取当前时间0秒后的时间
+    NSTimeInterval time=[date timeIntervalSince1970]*1000;// *1000 是精确到ms
+    return  [[NSNumber numberWithDouble:time] intValue];
+}
+
 /**
  * 计算两日期之间时间之差
  * date1<date2

@@ -34,6 +34,15 @@
     return self;
 }
 
++(void)postWithUrl:(NSString *)url param:(NSDictionary* _Nullable)param data:(NSData*)data fileName:(NSString*)fileName mimeType:(NSString*)mime success:(SHttpResultBlock) success fail:(SHttpResultBlock) fail{
+    bool isCanAdd=  [[SHttpTool2 sharedInstance]addToActivePoolWithUrl:url];
+    if (!isCanAdd) {
+        [[SHttpTool2 sharedInstance]rejectRequest:fail];
+        return;
+    }
+    [SHttpTool2 doPostWithUrl:url param:param data:data fileName:fileName mimeType:mime success:success fail:fail];
+}
+
 +(void)postWithUrl:(NSString*)url param:(NSString*)param success:(SHttpResultBlock) success fail:(SHttpResultBlock) fail{
     bool isCanAdd=  [[SHttpTool2 sharedInstance]addToActivePoolWithUrl:url];
     if (!isCanAdd) {
@@ -42,7 +51,7 @@
     }
     [SHttpTool2 doPostWithUrl:url param:param success:success fail:fail];
 }
-+(void)getWithUrl:(NSString*)url param:(NSDictionary*)param success:(void(^)(SHttpResult *result))success fail:(void (^)(SHttpResult *result))fail{
++(void)getWithUrl:(NSString*)url param:(NSDictionary* _Nullable)param success:(void(^)(SHttpResult *result))success fail:(void (^)(SHttpResult *result))fail{
     bool isCanAdd=  [[SHttpTool2 sharedInstance]addToActivePoolWithUrl:url];
     if (!isCanAdd) {
         [[SHttpTool2 sharedInstance]rejectRequest:fail];
@@ -63,7 +72,22 @@
     }];
 }
 
-+(void)doGetWithUrl:(NSString*)url param:(NSDictionary*)param success:(SHttpResultBlock) success fail:(SHttpResultBlock) fail {
++(void)doPostWithUrl:(NSString *)url param:(NSDictionary* _Nullable)param data:(NSData*)data fileName:(NSString*)fileName mimeType:(NSString*)mime success:(SHttpResultBlock) success fail:(SHttpResultBlock) fail{
+    [SAFNHttpTool postWithUrl:url param:param data:data fileName:fileName mimeType:mime success:^(NSDictionary *dict) {
+         [[SHttpTool2 sharedInstance]success:url resultBlock:success withData:dict];
+    } fail:^(NSError *error) {
+        if ([[SHttpTool2 sharedInstance]isRepeatRequest:url]) {
+            NSString*paraStr=[SDataConvertTool DataToJsonString:param];
+            [SHttpTool2 doPostWithUrl:url param:paraStr success:success fail:fail];
+            return ;
+        }
+        [[SHttpTool2 sharedInstance]fail:url resultBlock:fail withData:error];
+    }];
+}
+
+
+
++(void)doGetWithUrl:(NSString*)url param:(NSDictionary* _Nullable)param success:(SHttpResultBlock) success fail:(SHttpResultBlock) fail {
     [SAFNHttpTool getWithUrl:url param:param success:^(NSDictionary *dict) {
         [[SHttpTool2 sharedInstance]success:url resultBlock:success withData:dict];
     } fail:^(NSError *error) {

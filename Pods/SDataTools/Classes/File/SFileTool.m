@@ -98,8 +98,13 @@
 }
 
 +(bool)moveFile:(NSString*)filePath to:(NSString*)destinationPath isForce:(bool)force{
-    if ([SFileTool isFileExist:destinationPath]&&!force) {
-        return true;
+    if ([SFileTool isFileExist:destinationPath]) {
+        if (force) {
+            if(![SFileTool deleteFile:destinationPath]) return false;
+        }
+        else{
+            return true;
+        }
     }
     NSFileManager *fileManager = [NSFileManager defaultManager];
     return [fileManager moveItemAtPath:filePath toPath:destinationPath error:nil];
@@ -177,6 +182,76 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     return [fileManager contentsOfDirectoryAtPath:dir error:nil];
     
+}
+
++(void)copyFileRecurseFromPath:(NSString *)sourcePath toPath:(NSString *)toPath
+{
+    [SFileTool copyFileRecurseFromPath:sourcePath toPath:toPath expectCondition:^bool(NSString * _Nonnull name) {
+        return false;
+    }];
+//    NSFileManager *fileManager = [[NSFileManager alloc] init];
+//    NSArray* array = [fileManager contentsOfDirectoryAtPath:sourcePath error:nil];
+//    for(int i = 0; i<[array count]; i++)
+//    {
+//        NSString *fullPath = [sourcePath stringByAppendingPathComponent:[array objectAtIndex:i]];
+//        NSString *fullToPath = [toPath stringByAppendingPathComponent:[array objectAtIndex:i]];
+//        //        NSLog(@"%@",fullPath);
+//        //        NSLog(@"%@",fullToPath);
+//
+//        //判断是不是文件夹
+//        BOOL isFolder = NO;
+//        //判断是不是存在路径 并且是不是文件夹
+//        BOOL isExist = [fileManager fileExistsAtPath:fullPath isDirectory:&isFolder];
+//        if (isExist)
+//        {
+//            NSError *err = nil;
+//            [[NSFileManager defaultManager] copyItemAtPath:fullPath toPath:fullToPath error:&err];
+//            NSLog(@"%@",err);
+//            if (isFolder)
+//            {
+//                [self copyFileRecurseFromPath:fullPath toPath:fullToPath];
+//            }
+//        }
+//    }
+}
+
++(void)copyFileRecurseFromPath:(NSString *)sourcePath toPath:(NSString *)toPath expectCondition:(SSExceptBlock)isExcept
+{
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    NSArray* array = [fileManager contentsOfDirectoryAtPath:sourcePath error:nil];
+    for(int i = 0; i<[array count]; i++)
+    {
+        NSString *fullPath = [sourcePath stringByAppendingPathComponent:[array objectAtIndex:i]];
+        NSString *fullToPath = [toPath stringByAppendingPathComponent:[array objectAtIndex:i]];
+        //NSLog(@"%@",fullPath);
+        //NSLog(@"%@",fullToPath);
+        NSString*fileName=[fullPath lastPathComponent];
+        //判断是否需要复制
+        if (isExcept(fileName)) {
+            NSLog(@"%@ is Except",fileName);
+            continue;
+        }
+        //判断是不是文件夹
+        BOOL isFolder = NO;
+        //判断是不是存在路径 并且是不是文件夹
+        BOOL isExist = [fileManager fileExistsAtPath:fullPath isDirectory:&isFolder];
+        if (isExist)
+        {
+            NSError *err = nil;
+            
+            //NSLog(@"err %@",err);
+            if (isFolder)
+            {
+                NSLog(@"%@ is folder",fileName);
+                if([SFileTool createDir:fullToPath]||[SFileTool isDirExist:fullToPath]){
+                    [self copyFileRecurseFromPath:fullPath toPath:fullToPath];
+                }
+            }
+            else{
+                [[NSFileManager defaultManager] copyItemAtPath:fullPath toPath:fullToPath error:&err];
+            }
+        }
+    }
 }
 
 //+(NSString*)fileMD5:(NSString*)path

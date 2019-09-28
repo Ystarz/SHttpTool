@@ -11,6 +11,7 @@
 @interface STimeTool : NSObject
 +(NSString*)getNowTime:(NSDateFormatter *)dateFormatter;
 +(long long)getNowTimeStamp;
++(int)getNowTimeStampInt;
 +(long long) compareDate1:(NSDate *)date1 withDate2:(NSDate *)date2 type:(int)type;
 ///由时间戳转为时间格式
 +(NSString *)timeStampToString:(NSTimeInterval)timeStamp;

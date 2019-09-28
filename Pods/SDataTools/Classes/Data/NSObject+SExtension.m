@@ -7,7 +7,8 @@
 //
 
 #import "NSObject+SExtension.h"
-#import <SDataTools/SDataTools.h>
+#import "NSString+SExtension.h"
+//#import <SDataTools/SDataTools.h>
 
 @implementation NSObject(SExtension)
 +(bool)isNull:(NSObject*) obj{

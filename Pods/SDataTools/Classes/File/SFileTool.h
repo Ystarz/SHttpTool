@@ -10,6 +10,7 @@
 #define FILENOTEXIST @"file not exist"
 
 NS_ASSUME_NONNULL_BEGIN
+typedef bool (^SSExceptBlock)(NSString*name);
 
 @interface SFileTool : NSObject
 /**
@@ -32,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(bool)deleteDir:(NSString*)path;
 
 +(NSArray*)getAllFileNameInDir:(NSString*)dir;
++(void)copyFileRecurseFromPath:(NSString *)sourcePath toPath:(NSString *)toPath;
++(void)copyFileRecurseFromPath:(NSString *)sourcePath toPath:(NSString *)toPath expectCondition:(SSExceptBlock)isExcept;
 +(NSString*)fileMD5:(NSString*)path;
 +(NSString *)fileSHA1:(NSString *)path;
 
